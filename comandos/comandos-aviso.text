@@ -1,0 +1,5 @@
+window.alert('') = aparace um aviso na tela, pode escrever o que quer para aparacer no aviso.
+
+window.confirm('') = é pra quando o usuario confirmar o "alert", podendo escrever o que quiser em seguida, com as opções de confirmar ou cancelar.
+
+window.prompt('') = é para perguntar algo para o usuario possa responder na barra de escrever e enviar para o site.
