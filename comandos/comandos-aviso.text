@@ -27,3 +27,15 @@ ${} = é um tamplate, que serve para modicar uma string (ATENÇÃO: Que esteja e
 .replace(",") = é para trocar uma coisa por outra. ex: n1 = 2.5 -> n1.replace('.', ',') == 2,5 .
 
 toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) = é para colocar o simbolo do real na frente.
+
+n++ = para somar mais um (pos ação), ++n(pre ação).
+
+n-- = para subtrair um (pos acão), --n (pre acão).
+
+'===' = para saber é do mesmo tipo e do mesme jeito.
+
+&& = para saber se os dois é verdadeiro.
+
+|| = para saber um dos dos dois é verdadeiro.
+
+! = pra negar algo.
