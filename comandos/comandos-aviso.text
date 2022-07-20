@@ -3,3 +3,27 @@ window.alert('') = aparace um aviso na tela, pode escrever o que quer para apara
 window.confirm('') = é pra quando o usuario confirmar o "alert", podendo escrever o que quiser em seguida, com as opções de confirmar ou cancelar.
 
 window.prompt('') = é para perguntar algo para o usuario possa responder na barra de escrever e enviar para o site.
+
+document.write = para escrever no documento.
+
+                                COMANDOS DO NODE
+
+var = para indicar uma variarel. ex: var n1 = '3'
+
+string() = para converter para uma string. pode ser assim tambem: n.string().
+
+number() = para converter para um numero. pode ser assim tambem: number.parseint() (Para numero inteiro) e number.parsefloat() (Para numero real).
+
+typeof = para dizer o tipo da variarel. ex: typeof n1 == number.
+
+${} = é um tamplate, que serve para modicar uma string (ATENÇÃO: Que esteja envolvolvida com: ``) .
+
+.toUpperCase() = para deixa em maiúscolo.
+
+.toLowerCase() = para deixar em menúscula.
+
+.toFixed() = para dizer quantas casas vai deixa a mostra num numero real. ex: n1 = 2.5 -> n1.toFixed(2) == 2.50 .
+
+.replace(",") = é para trocar uma coisa por outra. ex: n1 = 2.5 -> n1.replace('.', ',') == 2,5 .
+
+toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) = é para colocar o simbolo do real na frente.
