@@ -6,6 +6,8 @@ window.prompt('') = é para perguntar algo para o usuario possa responder na bar
 
 document.write = para escrever no documento.
 
+.innerText = para substituir oq ta escrito.
+
                                 COMANDOS DO NODE
 
 var = para indicar uma variarel. ex: var n1 = '3'
@@ -36,6 +38,6 @@ n-- = para subtrair um (pos acão), --n (pre acão).
 
 && = para saber se os dois é verdadeiro.
 
-|| = para saber um dos dos dois é verdadeiro.
+|| = para saber se um dos dos dois é verdadeiro.
 
 ! = pra negar algo.
