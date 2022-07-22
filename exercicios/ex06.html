@@ -18,11 +18,22 @@
     </style>
 </head>
 <body>
-    <div id="area">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
         Interaja
     </div>
     <script>
-
+        area = document.getElementById('area')
+        
+        function clicar() {
+            area.style.background = 'red'
+            area.innerText = 'Clicou!'
+        }
+        function entrar() {
+            area.innerText = 'Entrou!'
+        }
+        function saiu() {
+            area.innerText = 'Saiu!'
+        }
     </script>
 </body>
 </html>
