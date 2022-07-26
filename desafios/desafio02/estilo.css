@@ -19,9 +19,10 @@ section {
 div#res {
     text-align: center;
 }
-#botao {
+input.botao {
+    display: block;
     width: 300px;
-    margin-left: 19%;
+    margin: auto;
 }
 footer {
     text-align: center;
