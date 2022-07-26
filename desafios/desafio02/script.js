@@ -29,6 +29,23 @@ function verificar() {
                 des.innerText = `Um velhinho de ${idade} anos`
                 img.src = 'imagens/velho.png'
             }
+        }else if(feminino.checked) {
+            if(idade <= 12){
+                des.innerText = `Uma menina de ${idade} anos`
+                img.src = 'imagens/menina.png'
+            }
+            else if(idade > 12 && idade <= 25){
+                des.innerText = `Uma jovem de ${idade} anos`
+                img.src = 'imagens/jovem-menina.png'
+            }
+            else if(idade > 25 && idade <= 50){
+                des.innerText = `Uma mulher de ${idade} anos`
+                img.src = 'imagens/mulher.png'
+            }
+            else if(idade > 50){
+                des.innerText = `Uma velhinha de ${idade} anos`
+                img.src = 'imagens/velha.png'
+            }
         }
     }
    
