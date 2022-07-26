@@ -6,8 +6,8 @@ function verificar() {
 
     var masculino = document.getElementsByName('sexo')[0]
     var feminino = document.getElementsByName('sexo')[1]
-    var img = document.getElementById('img')
-    var des = document.getElementById('res')
+    var img = document.getElementById('imagem')
+    var des = document.getElementById('des')
     if(ano.value == 0 || ano.value > data.getFullYear()) {
         alert('digite sua idade para verificar')
     }
@@ -29,7 +29,8 @@ function verificar() {
                 des.innerText = `Um velhinho de ${idade} anos`
                 img.src = 'imagens/velho.png'
             }
-        }else if(feminino.checked) {
+        }
+        else if(feminino.checked) {
             if(idade <= 12){
                 des.innerText = `Uma menina de ${idade} anos`
                 img.src = 'imagens/menina.png'
