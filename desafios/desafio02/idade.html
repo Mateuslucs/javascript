@@ -15,12 +15,13 @@
         <p><label for="nasc">Ano de nascimento: </label> <input type="number" name="nasc" id="nasc"></p>
         <p>
             sexo:
-            <input type="radio" name="sexo" id="mas"> <label for="mas">Masculino</label>
+            <input type="radio" name="sexo" id="mas" checked> <label for="mas">Masculino</label>
             <input type="radio" name="sexo" id="fem"> <label for="fem">Feminino</label> 
         </p>
-        <p><input type="button" value="Verificar"></p>
+        <p><input type="button" value="Verificar" onclick="verificar()"></p>
         <div id="res">
-            <p>Preencha os dados a cima pra Ver o resultado!</p>
+            Preencha os dados a cima pra Ver o resultado!
+            <img id="img" src="" alt="">
         </div>
     </section>
     <footer>
