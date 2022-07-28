@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    font: normal 15pt arial;
+    background-color: rgb(37, 90, 238);
+}
+header {
+    text-align: center;
+    color: white;
+}
+section {
+    background-color: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
+}
+div#r {
+    text-align: center;
+}
+input.botao {
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+footer {
+    text-align: center;
+    color: white;
+}

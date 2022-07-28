@@ -8,15 +8,14 @@ function contar(){
         alert('Ta faltando dados')
     }
     else{
-        if(passo == 0){
-            alert('Passo invalido! considerando passo = 1')
-            p = 1
-        }
         res.innerHTML = 'contando: <br>'
         let i = Number(inicio)
         let f = Number(fim)
         let p = Number(passo)
-
+        if(passo == 0){
+            alert('Passo invalido! considerando passo = 1')
+            p = 1
+        }
         if(i < f){
             for(var c = i ; c <= f; c += p){
                 res.innerHTML += `${c} `
