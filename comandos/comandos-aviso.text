@@ -41,3 +41,7 @@ n-- = para subtrair um (pos acão), --n (pre acão).
 || = para saber se um dos dos dois é verdadeiro.
 
 ! = pra negar algo.
+
+.push() = A msm coisa q o "append" no python, ele vai add no final de uma lista(no caso do java script, vai add no array).
+
+.sort() = vai colocar em ordem crescente.
