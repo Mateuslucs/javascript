@@ -19,6 +19,14 @@ section {
 label {
     font-size: clamp(1rem, 3vw, 1.3rem);
 }
+aside {
+    margin: auto;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 30%);
+    width: 198px;
+    min-height: 50px;
+}
 select{
     display: block;
     margin: auto;
@@ -32,6 +40,7 @@ input.botao{
 #botao {
     width: 124px;
     margin: auto;
+    display: table;
 }
 footer {
     text-align: center;

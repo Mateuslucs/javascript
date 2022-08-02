@@ -1,7 +1,7 @@
 let num = []
 let ntext = document.getElementById('num')
 let res = document.getElementById('r')
-
+let tela = document.querySelector('aside')
 function escreva(text){
     var p = document.createElement('p')
     var texto = document.createTextNode(`${text}`)
@@ -31,6 +31,7 @@ function add(){
         num.push(n)
         let item = document.createElement('option')
         item.text = `Valor ${n} adicionado.`
+        tela.innerText = `Valor ${n} adicionado.`
         ana.appendChild(item)
     }else{
         alert(`Valor inválido ou já foi encontrado na lista`)
@@ -50,6 +51,7 @@ function final(){
         soma += num[c]
     }
     var media = soma/num.length
+    tela.innerText = 'Seus valores estão abaixo'
     escreva(`Ao todo, temos ${num.length} números cadastrados`)
     escreva(`O maior valor informado foi ${Math.max.apply(null, num)}`)
     escreva(`O menor valor informado foi ${Math.min.apply(null, num)}`)
@@ -61,4 +63,5 @@ function limpar() {
     let ana = document.getElementById('ana')
     num.length = 0
     ana.innerHTML = ''
+    tela.innerText = ''
 }
