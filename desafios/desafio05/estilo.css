@@ -16,6 +16,9 @@ section {
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
 }
+label {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+}
 select{
     display: block;
     margin: auto;
@@ -24,8 +27,11 @@ select{
     width: 200px;
 }
 input.botao{
-    display: block;
-    margin: 10px auto;
+    display: inline-block;
+}
+#botao {
+    width: 124px;
+    margin: auto;
 }
 footer {
     text-align: center;
