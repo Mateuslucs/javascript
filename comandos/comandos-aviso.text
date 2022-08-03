@@ -8,6 +8,10 @@ document.write = para escrever no documento.
 
 .innerText = para substituir oq ta escrito.
 
+.createElement() = para um elemento novo
+
+
+
                                 COMANDOS DO NODE
 
 var = para indicar uma variarel. ex: var n1 = '3'
@@ -45,3 +49,13 @@ n-- = para subtrair um (pos acão), --n (pre acão).
 .push() = A msm coisa q o "append" no python, ele vai add no final de uma lista(no caso do java script, vai add no array).
 
 .sort() = vai colocar em ordem crescente.
+
+.indexOf(n) = vai te entregar a posição do "n". caso ele n ache, vai retornar -1.
+
+.focus() = para manter selecionado.
+
+Math.max.apply(null, n) = vai te entegar o maior valor da lista(n).
+
+Math.min.apply(null, n) = vai te entregar o menor valor da lista(n).
+
+.toFixed(n) = vai formatar o numero com o restante "n"

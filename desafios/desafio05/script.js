@@ -2,6 +2,7 @@ let num = []
 let ntext = document.getElementById('num')
 let res = document.getElementById('r')
 let tela = document.querySelector('aside')
+let ana = document.getElementById('ana')
 function escreva(text){
     var p = document.createElement('p')
     var texto = document.createTextNode(`${text}`)
@@ -50,7 +51,7 @@ function final(){
     for(c in num){
         soma += num[c]
     }
-    var media = soma/num.length
+    let media = soma/num.length
     tela.innerText = 'Seus valores estão abaixo'
     escreva(`Ao todo, temos ${num.length} números cadastrados`)
     escreva(`O maior valor informado foi ${Math.max.apply(null, num)}`)
@@ -60,8 +61,8 @@ function final(){
     }
 }
 function limpar() {
-    let ana = document.getElementById('ana')
     num.length = 0
     ana.innerHTML = ''
     tela.innerText = ''
+    res.innerHTML = ''
 }
