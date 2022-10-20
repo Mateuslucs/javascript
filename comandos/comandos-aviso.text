@@ -46,7 +46,13 @@ n-- = para subtrair um (pos acão), --n (pre acão).
 
 ! = pra negar algo.
 
+.unshift() = vai adicionar um elemento no começo no array.
+
 .push() = A msm coisa q o "append" no python, ele vai add no final de uma lista(no caso do java script, vai add no array).
+
+shift() = vai tirar o primeiro elemento.
+
+.pop() = vai retirar o ultimo elemento do array.
 
 .sort() = vai colocar em ordem crescente.
 
@@ -59,3 +65,85 @@ Math.max.apply(null, n) = vai te entegar o maior valor da lista(n).
 Math.min.apply(null, n) = vai te entregar o menor valor da lista(n).
 
 .toFixed(n) = vai formatar o numero com o restante "n"
+
+.valueOf() = vai mostrar o array por completo. Ex.: ['kar','palio',uno'].
+
+.toString() = vai o mostrar os valores do array. Ex.: 'kar,palio,uno'.
+
+.splice(pos, (qtd de Elementos que vai ser retirado), elemento) = vai retirar o elemento na posição desejada e pode remover outros Elementos que sejam iguais, basta dizer quantidade dps da posição. o terceiro elemento vai ser o elemento q vai substituir o que vai ser retirado.
+
+.filter() = é para filtar um array. Ex.: carros = []; 
+    carros[0] = {marca: "ford", modelo: "ka"};
+    carros[1] = {marca: "chevrolet", modelo: "corsa"};
+    carros[2] = {marca: "fiat", modelo: "palio"};
+
+    carros.filter(function(elemento){
+    return elemento.marca == "ford"; // [{marca:"ford", modelo: "ka"}]
+})
+
+.every() = é para testar todos os elementos do array se ele todos são a msm coisa dependendo da sua condição e retornara um valor booleano. Ex.:
+    carros = []; 
+    carros[0] = {marca: "ford", modelo: "ka"};
+    carros[1] = {marca: "chevrolet", modelo: "corsa"};
+    carros[2] = {marca: "fiat", modelo: "palio"};
+
+    carros.every(function(elemento){
+        return elemento.marca == "ford";
+    }); 
+    // 'false'
+
+.some() = é para testar se algum dos elementos existe de acordo com a condição e retornara um valor booleano. Ex.: 
+    carros = []; 
+    carros[0] = {marca: "ford", modelo: "ka"};
+    carros[1] = {marca: "chevrolet", modelo: "corsa"};
+    carros[2] = {marca: "fiat", modelo: "palio"};
+
+    carros.some(function(elemento){
+        return elemento.marca == "ford";
+    });
+    // 'true'
+
+.map() = é para mapear um array, retornado outro array de acordo com a sua condição. Ex.: 
+    carros = []; 
+    carros[0] = {marca: "ford", modelo: "ka"};
+    carros[1] = {marca: "chevrolet", modelo: "corsa"};
+    carros[2] = {marca: "fiat", modelo: "palio"};
+
+    carros.map(function(elemento){
+        return elemento.marca;
+    });
+    // ["ford","chevrolet","fiat"]
+
+.reduce() = é para acumular. Ex.: 
+    carros = []; 
+    carros[0] = {marca: "ford", modelo: "ka", preco: 28800};
+    carros[1] = {marca: "chevrolet", modelo: "corsa", preco: 32000};
+    carros[2] = {marca: "fiat", modelo: "palio", preco: 34750};
+
+    carros.reduce(function(prev, elemento){
+        return prev + cur.preco;
+    }, 0);
+    // 95550
+
+.concat() = é para concatenar arrays. Ex.: 
+    carros['kar','palio',uno'];
+    motos["honda", "yamaha"];
+    var veiculos = carros.concat(motos);
+    veiculos.toString() // ["kar","palio","uno","honda", "yamaha"]
+
+.slice(pos,pos) = é para fatiar o array.
+
+.sort = é para odernar um array mas em ordem alfabetica, se quiser em numero vai ter q usar da seguinte forma: 
+    carros = []; 
+    carros[0] = {marca: "ford", modelo: "ka", preco: 28800};
+    carros[1] = {marca: "chevrolet", modelo: "corsa", preco: 32000};
+    carros[2] = {marca: "fiat", modelo: "palio", preco: 34750};
+
+    carros.sort(function(a(valor anterior), b(valor posterior)){
+        return a.preco - b.preco;
+    })
+    carros.valueOf() // ['kar'.'chevrolet','fiat']
+
+.join() = vai saparar o array dependendo do separador. Ex.:
+    carros['kar','palio',uno'];
+    carros.join(","); // "kar,"palio","uno"
