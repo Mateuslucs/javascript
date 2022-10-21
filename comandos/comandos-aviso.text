@@ -151,3 +151,56 @@ Math.min.apply(null, n) = vai te entregar o menor valor da lista(n).
 match = executa uma busca na string e retorna um array contendo os dados encontrados, ou null.
 
 split = divide a string com base em uma outra string fixa ou expressão regular.
+
+============================================================================================================================
+HERANÇA
+**Sera usado como exemplo**
+var homem = {
+    sexo: "masculino"
+};
+
+Object.setPrototypeOf(objeto,herança) = vai adicionar um proto(herança) no objeto determinado (objeto). Ex.: 
+    var joao = {nome: "joão", idade: 20}; 
+    Object.setPrototypeOf(joao,homem);
+    console.log(joao.sexo) // masculino
+
+.hasOwnProperty() = é para verificar se o objeto tem tal propriedade determinada (obs: proto não é uma propriedade e sim uma herança). Ex.:
+    var joao = {nome: "joão", idade: 20};
+    Object.setPrototypeOf(joao,homem);
+    console.log(joao.hasOwnProperty("sexo")); // false
+
+function.call(objeto, parametros da function) = é para usar com funções construtoras passando o nome do objeto (objeto) e depois passando os parametros da function. Ex.: 
+    function Homem (nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = "masculino";
+    };
+
+    var pedro = {};
+    Homem.call(pedro, "Pedro malaquias", 18);
+    console.log(pedro); // { nome: 'Pedro malaquias', idade: 18 }
+
+herança na function = é possivel colocar proto na função dessa maneira: 
+    function Homem (nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+    };
+    Homem.prototype.sexo = "masculino";
+
+    var joao = new Homem("joão", 20);
+    console.log(joao); // { nome: 'joão', idade: 20 }
+    console.log(joao.sexo); // masculino
+
+    **caso tenha usado a função ".call" ou ".apply", tera que colocar isso:
+    var objeto.__proto__ = Homem.prototype;
+
+simplificando a consulta de cima com uma nova função:
+    function _new (f) {
+        var obj = {};
+        obj.__proto__ = f.prototype;
+        f.apply(obj, Array.prototype.slice.call(arguments, 1)); # aqui ele ta pegando os arguments e colocando dentro de um array pra poder pegar os valores.
+        return obj;
+    };
+
+    var pedro = _new(Homem, "pedro", 18);
+    console.log(pedro);
