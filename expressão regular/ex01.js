@@ -1,4 +1,3 @@
-/*var regEx = /9999-9999/;
+var regEx = /9999-9999/;
 var telefone = "9999-9999";
-console.log(regEx.exec(telefone));*/
-console.log("ola mundo");
+console.log(regEx.test(telefone));

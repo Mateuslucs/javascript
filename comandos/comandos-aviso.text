@@ -147,3 +147,7 @@ Math.min.apply(null, n) = vai te entregar o menor valor da lista(n).
 .join() = vai saparar o array dependendo do separador. Ex.:
     carros['kar','palio',uno'];
     carros.join(","); // "kar,"palio","uno"
+
+match = executa uma busca na string e retorna um array contendo os dados encontrados, ou null.
+
+split = divide a string com base em uma outra string fixa ou expressão regular.
