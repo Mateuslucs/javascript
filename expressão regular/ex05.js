@@ -16,6 +16,9 @@
 /**
  * "g" no final da regEx = é para dizer que continue com match.
  */
-var regEx = /\(\d{2}\)\s\d{4,5}-?\d{4}/g;
-var telefone = "çvmivhwiv (48) 995897979 nfi bifhb (81) 99579-2358";
+/*var regEx = /\(\d{2}\)\s\d{4,5}-?\d{4}/g;
+var telefone = "çvmivhwiv (48) 995897979 nfi bifhb (81) 99579-2358";*/
+var regEx = /(?:\()([\w\s]+)(?:\))/
+var telefone = "goiais (GO)";
+
 console.log(telefone.match(regEx));
